@@ -24,3 +24,7 @@ if __name__ == "__main__":
     add_task("Оформить отчёт по ЛПР 3")
     complete_task(1)
     list_tasks()
+
+def delete_task(task_id):
+    global tasks
+    tasks = [t for t in tasks if t["id"] != task_id]
