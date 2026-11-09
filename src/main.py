@@ -31,3 +31,6 @@ def delete_task(task_id):
 
 def validate_task_title(title):
     return isinstance(title, str) and len(title.strip()) >= 3
+
+def search_tasks(keyword):
+    return [t for t in tasks if keyword in t["title"]]
