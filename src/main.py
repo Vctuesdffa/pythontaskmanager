@@ -34,3 +34,6 @@ def validate_task_title(title):
 
 def search_tasks(keyword):
     return [t for t in tasks if keyword in t["title"]]
+
+def search_tasks_case_insensitive(keyword):
+    return [t for t in tasks if keyword.lower() in t["title"].lower()]
