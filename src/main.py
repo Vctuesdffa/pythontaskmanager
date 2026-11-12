@@ -1,4 +1,4 @@
-APP_TITLE = "=== Python Task Manager v2.0 (Feature) ==="
+APP_TITLE = "=== Консольный менеджер задач (Main v1.2) ==="
 tasks = []
 
 def add_task(title):
