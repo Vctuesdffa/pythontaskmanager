@@ -39,3 +39,12 @@ if __name__ == "__main__":
     add_task("Оформить отчёт по ЛПР 4")
     complete_task(1)
     list_tasks()
+
+def show_menu():
+    print("\n--- Меню управления задачами ---")
+    print("1. Список задач | 2. Добавить | 3. Выполнить | 4. Удалить | 5. Поиск")
+
+def get_task_stats():
+    total = len(tasks)
+    completed = sum(1 for t in tasks if t["done"])
+    return {"total": total, "completed": completed, "pending": total - completed}
